@@ -1,0 +1,50 @@
+{
+    "name": "blockchainofthings/catenis-api-client",
+    "description": "Catenis API client library for PHP",
+    "type": "library",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/claudiosdc/react-guzzle-psr7.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/claudiosdc/react-guzzle-http-client.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/claudiosdc/reactphp-buzz.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.5.8",
+        "wyrihaximus/react-guzzle-psr7": "dev-decode-content",
+        "evenement/evenement": "^3.0 || ^2.0",
+        "ratchet/pawl": "^0.3.4",
+        "wyrihaximus/react-guzzle-http-client": "dev-decode-content",
+        "clue/buzz-react": "dev-decode-content"
+    },
+    "require-dev": {
+        "react/event-loop": "^1.0",
+        "squizlabs/php_codesniffer": "3.*",
+        "phpunit/php-invoker": "^2.0",
+        "phpunit/phpunit": "^8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cláudio de Castro",
+            "email": "claudio@blockchainofthings.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Catenis\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Catenis\\Tests\\": "tests/" }
+    }
+}

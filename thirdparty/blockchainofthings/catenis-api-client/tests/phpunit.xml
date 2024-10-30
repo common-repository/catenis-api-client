@@ -1,0 +1,48 @@
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
+         bootstrap="../vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         enforceTimeLimit="true"
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="10"
+         timeoutForLargeTests="60"
+         verbose="false">
+    <testsuites>
+        <testsuite name="PHP_Client">
+            <file>PHPClientTest.php</file>
+            <file>PHPClientAsyncTest.php</file>
+        </testsuite>
+        <testsuite name="PHP_Client_Compression">
+            <file>PHPClientCompressionTest.php</file>
+            <file>PHPClientCompressionAsyncTest.php</file>
+        </testsuite>
+        <testsuite name="PHP_Client_3.0.0">
+            <file>PHPClientVer3.0.0Test.php</file>
+            <file>PHPClientVer3.0.0AsyncTest.php</file>
+        </testsuite>
+        <testsuite name="PHP_Client_4.0.1">
+            <file>PHPClientVer4.0.1Test.php</file>
+            <file>PHPClientVer4.0.1AsyncTest.php</file>
+        </testsuite>
+        <testsuite name="PHP_Client_4.1.0">
+            <file>PHPClientVer4.1.0Test.php</file>
+            <file>PHPClientVer4.1.0AsyncTest.php</file>
+        </testsuite>
+        <testsuite name="PHP_Client_5.0.0">
+            <file>PHPClientVer5.0.0Test.php</file>
+            <file>PHPClientVer5.0.0AsyncTest.php</file>
+        </testsuite>
+        <testsuite name="PHP_Client_6.0.1">
+            <file>PHPClientVer6.0.1Test.php</file>
+            <file>PHPClientVer6.0.1AsyncTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
